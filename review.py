@@ -94,11 +94,16 @@ sr = s+ss  # +号进行字符串拼接
 #                                 pass
 
 
-# input
+# input和赋值
 """
 python2 中的input会把input中的语句当作代码执行；
 而Python3中会当作字符串执行，如果实现和Python2一样的功能，可在前面加上eval()方法
 """
+
+# 赋值
+a = 10
+b = 20
+a, b = b, a  # a,b的值调换
 
 """函数"""
 
