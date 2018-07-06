@@ -26,6 +26,7 @@ ss = 'this is also a string'
 sss = """this is a sting"""  # 三引号里可以单独使用双引号或者单引号
 
 #原始字符串
+"""
 >>>print("hello,\nworld") 
 hello，
 world  # 这是因为发生了转义
@@ -33,7 +34,7 @@ world  # 这是因为发生了转义
 s = r"hello,\nworld"
 >>>print(s)
 hello,\nworld  # 实现原始字符串，在前面加上r
-
+"""
 
 # 字符串的一系列操作
 s.title()  # 每个首字母大写
@@ -74,7 +75,7 @@ sr = s+ss  # +号进行字符串拼接
 # 10.遍历的同时返回索引值：enumerate()函数;
 # 11.列表生成式：l = [i for i in range(0,10)],l = [i**2 for i in range(10)]
 #     可加入判断： l = [i for i in range(10) if i%2==0]
-#     引入random模块，
+
 
 """元组"""
 
