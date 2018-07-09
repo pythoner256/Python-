@@ -18,33 +18,26 @@ help(obj.func)  # 获得对象方法的使用
 # 3.不能以Python关键字命名
 # 4.慎用小写字母i和大写字母O,很容易看成是1和数字0
 
-"""字符串，原始字符串"""
+
 # 字符串
-"""可以用双引号、单引号、三引号表示字符串"""
+"""可以用双引号和单引号表示字符串"""
 s = "this is a string."
 ss = 'this is also a string'
-sss = """this is a sting"""  # 三引号里可以单独使用双引号或者单引号
-
-#原始字符串
-"""
->>>print("hello,\nworld") 
-hello，
-world  # 这是因为发生了转义
-
-s = r"hello,\nworld"
->>>print(s)
-hello,\nworld  # 实现原始字符串，在前面加上r
-"""
 
 # 字符串的一系列操作
 s.title()  # 每个首字母大写
 s.capitalize()  # 首字母大写，其他都是小写
 s.lower()  # 全部小写
 s.upper()  # 全部大写
-s.strip()  # 删除空白；包括rsritp(),lsrtip()分别删除左边空格和右边空格
+s.strip()  # 删除空白
 s.endswith('g')  # 判断是以什么结尾
 s.startswith('g')  # 判断是以什么开头
 sr = s+ss  # +号进行字符串拼接
+
+# 字符串格式化format
+
+s = 'zhe shi {}{}{} geshihua'.format('zi', 'fu', 'chuan')  # zhe shi zi fu chuan geshihua
+
 
 # 制表符和换行符
 """
@@ -75,7 +68,7 @@ sr = s+ss  # +号进行字符串拼接
 # 10.遍历的同时返回索引值：enumerate()函数;
 # 11.列表生成式：l = [i for i in range(0,10)],l = [i**2 for i in range(10)]
 #     可加入判断： l = [i for i in range(10) if i%2==0]
-
+#     引入random模块，
 
 """元组"""
 
