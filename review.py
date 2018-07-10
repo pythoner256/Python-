@@ -339,6 +339,15 @@ except Exception as e:
 else:
     pass
 
+# finally 不管有没有异常都会执行
+
+try:
+    pass
+except Exception as e:
+    pass
+finally:
+    pass
+
 """存储数据 JSON库"""
 
 # json.dump()  存储数据
