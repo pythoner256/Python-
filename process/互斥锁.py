@@ -27,3 +27,7 @@ th2 = Thread(target=test2)
 th1.start()
 th2.start()
 
+
+#输出结果
+# 1000000
+# 2000000
