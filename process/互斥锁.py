@@ -4,18 +4,20 @@ num = 0
 
 
 def test1():
-    mutex.acquire()  # 上锁
+    
     global num
     for i in range(1000000):
+        mutex.acquire()  # 上锁
         num += 1
     print(num)
     mutex.release()  # 解锁
 
 
 def test2():
-    mutex.acquire()
+    
     global num
     for i in range(1000000):
+        mutex.acquire()
         num += 1
     print(num)
     mutex.release()
