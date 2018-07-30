@@ -18,6 +18,8 @@
 #
 # os.chmod() 改变目录权限
 #
+# os.environ() 获取环境变量；可以通过os.environ.get(key)查看某个环境变量的值
+#
 # os.path.join() 将分离的各部分组合成一个路径名
 #
 # os.path.split() 返回( dirname(), basename())元组
