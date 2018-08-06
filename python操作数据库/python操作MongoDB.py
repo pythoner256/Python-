@@ -7,7 +7,7 @@ db = client.test  # 获得数据库
 
 coll = db.jihe  # 获取集合
 
-coll.inser_one({'name': 'xiaoming', 'gender': 1})  # 插入一条数据
+coll.insert_one({'name': 'xiaoming', 'gender': 1})  # 插入一条数据
 
 coll.update_one({'name': 'dd'}, {'$set': {'name': 'xiaohong'}})  # 修改数据
 
